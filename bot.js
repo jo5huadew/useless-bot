@@ -1,7 +1,11 @@
 function answerQuery(query) {
   query = query.toLowerCase();
   if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
-    return "I do not care too much about weather, I'm locked inside a data center.";
+      return "I do not care too much about weather, I'm locked inside a data center.";
+  
+  if (query.indexOf("dumb") != -1 || query.indexOf("stupid") != -1 || query.indexOf("smart") != -1)
+      return "I am very clever. I got top marks in my Turing test.";
+
   return "Sorry Dave, I cannot do that."
 }
 
